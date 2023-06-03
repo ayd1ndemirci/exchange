@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   usdButton.addEventListener('click', () => {
     fetchExchangeRate('USD', 'TRY');
     container.classList.add('show');
-    textContainer.innerHTML = '';
     usdButton.style.backgroundColor = '#007bff';
     euroButton.style.backgroundColor = '#007f00';
   });
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
   euroButton.addEventListener('click', () => {
     fetchExchangeRate('EUR', 'TRY');
     container.classList.add('show');
-    textContainer.innerHTML = '';
     euroButton.style.backgroundColor = '#007bff'; 
     usdButton.style.backgroundColor = '#007f00'; 
   });
